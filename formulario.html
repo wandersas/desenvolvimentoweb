@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <style>
+        body { padding:30px; line-height:130%; font-size:18px; background:#fafafa; }
+        h1 { margin:0 0 30px 0; }
+        form { line-height:150%; }
+        fieldset { background:#fff; border-radius:5px; border:1px solid #ccc; margin-bottom: 15px; } 
+        legend { background:#fff; padding:2px 10px; border:1px solid #ccc; border-radius:5px; } 
+    </style>
+
+</head>
+<body>
+
+<h1>Formulário Completo</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label>Nome:</label>
+            <input type="text" name="nome" required</><br />
+            <label>Sobrenome:</label>
+            <input type="text" name="sobrenome"</><br />
+            <label>Email:</label>
+            <input type="text" name="email"</><br />
+            <label>Telefone:</label>
+            <input type="text" name="telefone"</><br />
+            <label>Data de Nascimento:</label>
+            <input type="date" name="datanasc"</><br />
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+            <label>Rua:</label>
+            <input type="text" name="rua"</><br />
+            <label>Número:</label>
+            <input type="text" name="numero"</><br />
+            <label>Cidade:</label>
+            <input type="text" name="cidade"</><br />
+            <label>Estado:</label>
+            <input type="text" name="estado"</><br />
+            <label>CEP:</label>
+            <input type="date" name="cep"</><br />
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferências</legend>
+            <label>Cor Favorita:</label>
+            <select name="corfavorita"<>
+                <option value="vermelho">Vermelho</option>
+                <option value="branco">Branco</option>
+                <option value="verde">Verde</option>
+                <option value="amarelo">Amarelo</option>
+                <option value="azul">Azul</option>
+            </select><br />
+            <label>Gênero:</label>
+                <input type="radio" name="genero" value="M"</>Masculino  <input type="radio" name="genero" value="F"</>Feminino<br />
+            <label>Interesses:</label><br />
+                <input type="checkbox" name="intereses" value="esportes"</>Esportes <br />
+                <input type="checkbox" name="intereses" value="musica"</>Música <br />
+                <input type="checkbox" name="intereses" value="tecnologia"</>Tecnologia <br />
+        </fieldset>
+
+        <fieldset>
+            <legend>Upload de Arquivos</legend>
+            <label>Escolha um arquivo:</label>
+            <input type="file" name="arquivo" </><br />
+        </fieldset>
+
+        <fieldset>
+            <legend>Informações de Login</legend>
+            <label>Nome de Usuário:</label>
+            <input type="text" name="usuario"</><br />
+            <label>Senha:</label>
+            <input type="password" name="senha"</><br />
+            <label>Confirmar Senha:</label>
+            <input type="password" name="senhaconfirma"</><br />
+        </fieldset>
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>
